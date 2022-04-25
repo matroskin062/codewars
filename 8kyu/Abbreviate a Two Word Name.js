@@ -8,6 +8,6 @@ Sam Harris => S.H
 
 patrick feeney => P.F */
 const abbrevName = (name) => {
-  const [first, second] = name.toUpperCase().split(' ');
-  return `${first[0]}.${second[0]}`;
-}
+    const [first, second] = name.toUpperCase().split(' ');
+    return `${first[0]}.${second[0]}`;
+};

@@ -1,0 +1,22 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/matroskin062/codewars.git",
+  "author": "Dmytro Musatov <dmytro.musatov@pm.bet>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write './**/*.js'",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": "^12.4.0",
+    "mrm": "2",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "./**/*.js": "npm run format",
+    "*.js": "prettier --write"
+  }
+}
