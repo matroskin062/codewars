@@ -13,7 +13,7 @@ const persistence = (num) => {
     let counter = 0;
 
     while (`${num}`.length !== 1) {
-        num = `${num}`.split('').reduce((acc, val) => acc * val);
+        num = [...`${num}`].reduce((acc, val) => acc * val);
         counter += 1;
     }
 
